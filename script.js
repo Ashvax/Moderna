@@ -1,15 +1,14 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.carousel').slick({
-        infinite: true,
-        slidesToShow: 3, // Muestra tres imágenes a la vez, puedes ajustar este número según tu diseño
+        infinite: true, // Hace que el carrusel sea infinito
+        slidesToShow: 1, // Muestra una imagen a la vez, puedes ajustar esto según tus necesidades
         slidesToScroll: 1,
-        prevArrow: $('.slick-prev'),
-        nextArrow: $('.slick-next'),
+        prevArrow: $('.slick-prev'), // Selecciona el botón "Anterior"
+        nextArrow: $('.slick-next'), // Selecciona el botón "Siguiente"
         autoplay: true, // Activa el modo de reproducción automática
-        autoplaySpeed: 3000 // Establece la velocidad de cambio en milisegundos (3 segundos en este
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const form = document.getElementById('contact-form');
+        autoplaySpeed: 3000 // Establece la velocidad de cambio en milisegundos (3 segundos en este ejemplo)
+    });
+});
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();

@@ -53,17 +53,19 @@ img {
     height: 100%;
 }
 
-/* Estilo para el carrusel */
-.carousel {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden; /* Oculta el desbordamiento de las imágenes */
+.carousel-image {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
 }
 
-.carousel img {
-    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    float: left; /* Hace que las imágenes se coloquen una al lado de la otra */
+.carousel-image:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
 }
 
 /* Estilo para las flechas de navegación */
@@ -88,4 +90,55 @@ img {
 
 .slick-next {
     right: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+.input-group {
+    display: grid;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #09f1e6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0ea7b5;
 }

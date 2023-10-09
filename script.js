@@ -1,63 +1,13 @@
-<<<<<<< HEAD
-const carousel = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.carousel-slide');
-
-let currentIndex = 0;
-
-function showSlide(index) {
-    if (index < 0) {
-        currentIndex = slides.length - 1;
-    } else if (index >= slides.length) {
-        currentIndex = 0;
-    }
-
-    const translateX = -currentIndex * 100 + '%';
-    carousel.style.transform = `translateX(${translateX})`;
-}
-
-function nextSlide() {
-    currentIndex++;
-    showSlide(currentIndex);
-}
-
-function prevSlide() {
-    currentIndex--;
-    showSlide(currentIndex);
-}
-
-setInterval(nextSlide, 5000); // Cambia automáticamente cada 5 segundos
-
-// Agrega eventos de clic para la navegación
-carousel.addEventListener('click', nextSlide);
-=======
-const carousel = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.carousel-slide');
-
-let currentIndex = 0;
-
-function showSlide(index) {
-    if (index < 0) {
-        currentIndex = slides.length - 1;
-    } else if (index >= slides.length) {
-        currentIndex = 0;
-    }
-
-    const translateX = -currentIndex * 100 + '%';
-    carousel.style.transform = `translateX(${translateX})`;
-}
-
-function nextSlide() {
-    currentIndex++;
-    showSlide(currentIndex);
-}
-
-function prevSlide() {
-    currentIndex--;
-    showSlide(currentIndex);
-}
-
-setInterval(nextSlide, 5000); // Cambia automáticamente cada 5 segundos
-
-// Agrega eventos de clic para la navegación
-carousel.addEventListener('click', nextSlide);
->>>>>>> 7a94d3db895346f9b9d6ee5b75f8cf0ae9a94cb2
+$(document).ready(function(){
+    // Inicializa el carrusel con Slick Carousel
+    $('.carousel').slick({
+      dots: false, // Puedes habilitar o deshabilitar los puntos indicadores
+      arrows: true, // Flechas de navegación
+      prevArrow: '.slick-prev',
+      nextArrow: '.slick-next',
+      infinite: true, // Carrusel infinito
+      speed: 500, // Velocidad de transición
+      slidesToShow: 1, // Cantidad de imágenes mostradas a la vez
+      slidesToScroll: 1 // Cantidad de imágenes que se desplazan en cada cambio
+    });
+  });

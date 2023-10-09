@@ -77,7 +77,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../Odontología/sources/carillas-dentales-sonrisa-24h.jpg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+    background-image: url('../Moderna/sources/carillas-dentales-sonrisa-24h.jpg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -121,25 +121,32 @@ footer {
     margin: 10px auto; /* Establece márgenes horizontal y vertical para centrar la imagen */
     border: none; /* Elimina cualquier borde existente */
 }
-
+/* Estilo para el carrusel */
 .carousel {
-    display: flex;
-    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.carousel-slide {
-    flex: 0 0 100%; /* Ancho de cada slide */
-    transition: transform 0.5s ease; /* Efecto de transición */
+/* Estilo para las flechas de navegación */
+.slick-prev,
+.slick-next {
+    background-color: #09f1e6;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
-.carousel a {
-    display: block;
-    width: 100%;
-    height: 100%;
+.slick-prev {
+    left: 20px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.slick-next {
+    right: 20px;
 }
->>>>>>> 7a94d3db895346f9b9d6ee5b75f8cf0ae9a94cb2

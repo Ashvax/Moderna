@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../Odontología/sources/carillas-dentales-sonrisa-24h.jpg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+    background-image: url('../Moderna/sources/carillas-dentales-sonrisa-24h.jpg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -53,9 +53,17 @@ img {
     height: 100%;
 }
 
+/* Estilo para el carrusel */
 .carousel {
     width: 80%;
     margin: 0 auto;
+    overflow: hidden; /* Oculta el desbordamiento de las imágenes */
+}
+
+.carousel img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    float: left; /* Hace que las imágenes se coloquen una al lado de la otra */
 }
 
 /* Estilo para las flechas de navegación */

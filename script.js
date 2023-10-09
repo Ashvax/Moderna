@@ -11,3 +11,4 @@ $(document).ready(function(){
       slidesToScroll: 1 // Cantidad de imágenes que se desplazan en cada cambio
     });
   });
+  

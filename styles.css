@@ -1,0 +1,145 @@
+<<<<<<< HEAD
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Odontología/sources/carillas-dentales-sonrisa-24h.jpg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    background-color: #09f1e6;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    margin: 0; /* Agrega esta línea para eliminar el margen predeterminado */
+    position: relative; /* Agrega esta línea para establecer una posición relativa */
+    z-index: 0; /* Agrega esta línea para asegurarte de que el encabezado esté sobre la imagen de fondo */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #09f1e6;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+#logo {
+    width: 100px; /* Ajusta el ancho deseado para tu logotipo */
+    height: 100px; /* Autoajusta la altura según el ancho para mantener la proporción */
+    margin-top: 30px; /* Ajusta el margen superior según sea necesario */
+    display: block; /* Cambia la visualización de la imagen a bloque para controlar los márgenes */
+    margin: 10px auto; /* Establece márgenes horizontal y vertical para centrar la imagen */
+    border: none; /* Elimina cualquier borde existente */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* Ancho de cada slide */
+    transition: transform 0.5s ease; /* Efecto de transición */
+}
+
+.carousel a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+=======
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Odontología/sources/carillas-dentales-sonrisa-24h.jpg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+header {
+    background-color: #09f1e6;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    margin: 0; /* Agrega esta línea para eliminar el margen predeterminado */
+    position: relative; /* Agrega esta línea para establecer una posición relativa */
+    z-index: 0; /* Agrega esta línea para asegurarte de que el encabezado esté sobre la imagen de fondo */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #09f1e6;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+#logo {
+    width: 100px; /* Ajusta el ancho deseado para tu logotipo */
+    height: 100px; /* Autoajusta la altura según el ancho para mantener la proporción */
+    margin-top: 30px; /* Ajusta el margen superior según sea necesario */
+    display: block; /* Cambia la visualización de la imagen a bloque para controlar los márgenes */
+    margin: 10px auto; /* Establece márgenes horizontal y vertical para centrar la imagen */
+    border: none; /* Elimina cualquier borde existente */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* Ancho de cada slide */
+    transition: transform 0.5s ease; /* Efecto de transición */
+}
+
+.carousel a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+>>>>>>> 7a94d3db895346f9b9d6ee5b75f8cf0ae9a94cb2

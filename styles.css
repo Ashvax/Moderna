@@ -74,15 +74,16 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    user-select: none; /* Evita la selección de texto accidental */
 }
 
 .slick-prev {
-    left: 20px;
+    left: 0;
+    transform: translateY(-50%); /* Centra verticalmente en el borde izquierdo */
 }
 
 .slick-next {
-    right: 20px;
+    right: 0;
+    transform: translateY(-50%); /* Centra verticalmente en el borde derecho */
 }
 
 h1 {
@@ -103,6 +104,21 @@ label {
     font-weight: bold;
 }
 
+#prevBtn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#nextBtn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
 input[type="text"],
 input[type="email"],
 textarea {

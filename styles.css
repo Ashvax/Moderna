@@ -51,15 +51,15 @@ footer {
     display: flex;
     width: 100%; /* Ajusta el ancho deseado */
     overflow: hidden;
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: center;
+    justify-content: center; /* Centra horizontalmente las imágenes */
 }
 
 .carousel img {
-    max-width: 100%; /* Establece un ancho máximo para que las imágenes no se estiren más allá de su tamaño original */
-    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    max-width: 100%; /* Establece un ancho máximo para las imágenes */
+    height: auto;
     display: none;
 }
+
 /* Estilo para las flechas de navegación */
 .slick-prev,
 .slick-next {
@@ -74,6 +74,7 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+    user-select: none; /* Evita la selección de texto accidental */
 }
 
 .slick-prev {

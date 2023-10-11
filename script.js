@@ -1,15 +1,32 @@
-$(document).ready(function () {
-    $('.carousel').slick({
-        infinite: true, // Hace que el carrusel sea infinito
-        slidesToShow: 1, // Muestra una imagen a la vez, puedes ajustar esto según tus necesidades
-        slidesToScroll: 1,
-        prevArrow: $('.slick-prev'), // Selecciona el botón "Anterior"
-        nextArrow: $('.slick-next'), // Selecciona el botón "Siguiente"
-        autoplay: true, // Activa el modo de reproducción automática
-        autoplaySpeed: 3000 // Establece la velocidad de cambio en milisegundos (3 segundos en este ejemplo)
-    });
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const imagenes = document.querySelectorAll(".carousel img");
 
+    let currentIndex = 0;
+
+    function actualizarCarrousel() {
+        imagenes.forEach((img, index) => {
+            if (index === currentIndex) {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+        });
+    }
+
+    prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + imagenes.length) % imagenes.length;
+        actualizarCarrousel();
+    });
+
+    nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % imagenes.length;
+        actualizarCarrousel();
+    });
+
+    actualizarCarrousel();
+});
         form.addEventListener('submit', function (e) {
             e.preventDefault();
 
@@ -32,5 +49,3 @@ $(document).ready(function () {
             // O redirigir a una página de confirmación
             // window.location.href = 'pagina-de-confirmacion.html';
         });
-    });
-</script>

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../Moderna/sources/carillas-dentales-sonrisa-24h.jpg'); /* Reemplaza 'fondo.jpg' con la ruta de tu imagen de fondo */
+    background-image: url('../Moderna/sources/carillas-dentales-sonrisa-24h.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,7 +19,29 @@ header {
     position: relative; /* Agrega esta línea para establecer una posición relativa */
     z-index: 0; /* Agrega esta línea para asegurarte de que el encabezado esté sobre la imagen de fondo */
 }
-
+#inicio{
+    color: #ffffff;
+}
+#ofrecemos {
+    li{
+        list-style-type: none;
+    }
+    text-align: center;
+    text-size: 300%;
+    color: #ffffff;
+}
+#objetivos{
+    color: #ffffff;
+}
+#mision{
+    color: #ffffff;
+}
+#vision{
+    color: #ffffff;
+}
+#valores{
+    
+}
 nav ul {
     list-style-type: none;
 }

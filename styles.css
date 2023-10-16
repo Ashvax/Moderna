@@ -56,8 +56,8 @@ section {
 }
 
 footer {
-    background-color: #32c595
     color: #ffffff;
+    background-color: #32c595;
     text-align: center;
     padding: 10px;
 }
@@ -220,4 +220,22 @@ button:hover {
 
 #volverBtn:hover {
     background-color: #000000;
+}
+#servicios{
+    color: #ffffff;
+}
+#limpieza{
+    color: #ffffff;
+}
+#blanqueamiento{
+    color: #ffffff;
+}
+#implantes{
+    color: #ffffff;
+}
+#extraccion{
+    color: #ffffff;
+}
+#Volverpagebtn{
+    background-color: #32c595;
 }

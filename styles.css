@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #03bb85
+    background-color: #32c595
     ;
     color: rgb(255, 255, 255);
     padding: 10px;
@@ -34,7 +34,7 @@ section {
 }
 
 footer {
-    background-color: #09f1e6;
+    background-color: #32c595
     color: #ffffff;
     text-align: center;
     padding: 10px;
@@ -64,7 +64,7 @@ footer {
 /* Estilo para las flechas de navegación */
 .slick-prev,
 .slick-next {
-    background-color: #09f1e6;
+    background-color: #32c595;
     color: white;
     font-size: 18px;
     padding: 10px 20px;
@@ -88,6 +88,7 @@ footer {
 }
 
 h1 {
+    background-color: #32c595;
     text-align: center;
 }
 
@@ -131,7 +132,7 @@ textarea {
 }
 
 button {
-    background-color: #09f1e6;
+    background-color: #000000;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -141,5 +142,58 @@ button {
 }
 
 button:hover {
-    background-color: #0ea7b5;
+    background-color: #32c595;
+}
+#Contacto
+
+.back-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #32c595;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button a:hover {
+    background-color: #32c595;
+}
+#contacto {
+    border-top: 2px solid #32c595; /* Agrega un borde superior de color */
+    background-color: #32c595; /* Agrega un fondo de color */
+    padding: 20px; /* Añade espaciado interno para mejorar el aspecto */
+}
+
+/* Estilo para la dirección, teléfono y correo en el área de contacto */
+#contacto address {
+    font-size: 16px;
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+#contacto footer {
+    background-color: #bb0339; /* Agrega un fondo de color al pie de página */
+    color: #032c595; /* Cambia el color del texto para que sea legible en el fondo */
+    text-align: center;
+    padding: 10px;
+}
+/* Estilo para el botón de volver */
+#volverBtn {
+    background-color: #032c595; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin: 20px; /* Ajusta el margen según sea necesario */
+}
+
+#volverBtn:hover {
+    background-color: #32c595; /* Cambia el color de fondo al pasar el cursor */
 }

@@ -182,18 +182,20 @@ button:hover {
     text-align: center;
     padding: 10px;
 }
-/* Estilo para el botón de volver */
 #volverBtn {
-    background-color: #032c595; /* Color de fondo */
-    color: white; /* Color del texto */
-    border: none; /* Quita el borde */
-    border-radius: 5px; /* Agrega bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    font-size: 16px; /* Tamaño del texto */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    margin: 20px; /* Ajusta el margen según sea necesario */
+    background-color: #32c595;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px; /* Ajusta el margen izquierdo según tu preferencia */
+    cursor: pointer;
 }
 
 #volverBtn:hover {
-    background-color: #32c595; /* Cambia el color de fondo al pasar el cursor */
+    background-color: #000000;
 }

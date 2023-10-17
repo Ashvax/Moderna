@@ -1,3 +1,4 @@
+var mensajes = [];
     function validateForm() {
         var nombre = document.getElementById("nombre").value;
         var email = document.getElementById("email").value;
@@ -40,9 +41,31 @@
 
         document.getElementById('result').innerHTML = resultHTML;
         return false;
+        mensajes.push({
+            nombre: nombre,
+            email: email,
+            telefono: telefono,
+            mensaje: mensaje
+        });
+
+        mostrarMensajes();
+        return false;
     }
 
     function isValidEmail(email) {
         var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         return emailPattern.test(email);
+    }
+    function mostrarMensajes() {
+        var resultHTML = '<div style="color:green">Datos enviados:<br>';
+        for (var i = 0; i < mensajes.length; i++) {
+            resultHTML += 'Nombre: ' + mensajes[i].nombre + '<br>';
+            resultHTML += 'Email: ' + mensajes[i].email + '<br>';
+            resultHTML += 'Teléfono: ' + mensajes[i].telefono + '<br>';
+            resultHTML += 'Mensaje: ' + mensajes[i].mensaje + '<br>';
+            resultHTML += '<hr>';
+        }
+        resultHTML += '</div>';
+
+        document.getElementById('result').innerHTML = resultHTML;
     }

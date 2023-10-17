@@ -10,17 +10,25 @@ body {
 }
 
 header {
-    background-color: #32c595
-    ;
+    background-color: #32c595;
     color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
-    margin: 0; /* Agrega esta línea para eliminar el margen predeterminado */
-    position: relative; /* Agrega esta línea para establecer una posición relativa */
-    z-index: 0; /* Agrega esta línea para asegurarte de que el encabezado esté sobre la imagen de fondo */
+    margin: 0; 
+    position: relative; 
+    z-index: 0; 
 }
 #inicio{
     color: #ffffff;
+}
+p{
+    font-size: 25px;
+    font-weight: bolder;
+
+}
+li{
+    font-size: 22px;
+    font-weight: bold;
 }
 #ofrecemos {
     li{
@@ -32,6 +40,7 @@ header {
 }
 #objetivos{
     color: #ffffff;
+    
 }
 #mision{
     color: #ffffff;
@@ -75,24 +84,24 @@ footer {
     padding: 10px;
 }
 #logo {
-    width: 100px; /* Ajusta el ancho deseado para tu logotipo */
-    height: 100px; /* Autoajusta la altura según el ancho para mantener la proporción */
-    margin-top: 30px; /* Ajusta el margen superior según sea necesario */
-    display: block; /* Cambia la visualización de la imagen a bloque para controlar los márgenes */
-    margin: 10px auto; /* Establece márgenes horizontal y vertical para centrar la imagen */
-    border: none; /* Elimina cualquier borde existente */
+    width: 100px; 
+    height: 100px; 
+    margin-top: 30px; 
+    display: block; 
+    margin: 10px auto; 
+    border: none; 
 }
 
 .carousel {
     display: flex;
-    width: 100%; /* Ajusta el ancho deseado */
+    width: 100%; 
     overflow: hidden;
-    justify-content: center; /* Centra horizontalmente las imágenes */
+    justify-content: center; 
 }
 
 
 
-/* Estilo para las flechas de navegación */
+
 .slick-prev,
 .slick-next {
     background-color: #32c595;
@@ -110,12 +119,12 @@ footer {
 
 .slick-prev {
     left: 0;
-    transform: translateY(-50%); /* Centra verticalmente en el borde izquierdo */
+    transform: translateY(-50%); 
 }
 
 .slick-next {
     right: 0;
-    transform: translateY(-50%); /* Centra verticalmente en el borde derecho */
+    transform: translateY(-50%);
 }
 
 h1 {
@@ -197,19 +206,19 @@ button:hover {
     background-color: #32c595;
 }
 #contacto {
-    border-top: 2px solid #32c595; /* Agrega un borde superior de color */
-    background-color: #32c595; /* Agrega un fondo de color */
-    padding: 20px; /* Añade espaciado interno para mejorar el aspecto */
+    border-top: 2px solid #32c595; 
+    background-color: #32c595; 
+    padding: 20px; 
 }
 
-/* Estilo para la dirección, teléfono y correo en el área de contacto */
+
 #contacto address {
     font-size: 16px;
-    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    margin-top: 10px; 
 }
 #contacto footer {
-    background-color: #bb0339; /* Agrega un fondo de color al pie de página */
-    color: #032c595; /* Cambia el color del texto para que sea legible en el fondo */
+    background-color: #bb0303;
+    color: red; 
     text-align: center;
     padding: 10px;
 }
@@ -220,10 +229,10 @@ button:hover {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    text-decoration: none; /* Quita el subrayado del enlace */
+    text-decoration: none; 
     display: inline-block;
     margin-top: 20px;
-    margin-left: 20px; /* Ajusta el margen izquierdo según tu preferencia */
+    margin-left: 20px;
     cursor: pointer;
 }
 

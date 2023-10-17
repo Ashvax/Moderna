@@ -246,7 +246,7 @@ button:hover {
     text-decoration: none; 
     display: inline-block;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
     cursor: pointer;
     width: 100%;
 }

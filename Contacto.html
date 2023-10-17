@@ -15,24 +15,30 @@
         <h2>Donde cuidamos tu sonrisa</h2>
     </header>
     <h1>Contacto</h1>
-    <form id="contact-form">
-        <div class="input-group">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+    <h1>Contacto</h1>
+    <form id="contactForm" onsubmit="return validateForm()">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
         </div>
-        <div class="input-group">
-            <label for="email">Correo Electrónico:</label>
+        <div>
+            <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
         </div>
-        <div class="input-group">
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
+        <div>
+            <label for="telefono">Teléfono (formato: 123-456-7890):</label>
+            <input type="text" id="telefono" name="telefono" required>
         </div>
-        <div class="input-group">
-            <button type="submit">Enviar</button>
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
         </div>
     </form>
-</div>
+
+    <div id="result"></div>
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Si deseas más información o agendar una cita, no dudes en contactarnos:</p>

@@ -70,55 +70,45 @@ footer {
     border: none; /* Elimina cualquier borde existente */
 }
 
-.carrusel{
+.carousel {
     display: flex;
-    justify-content: center;
-}
-
-#left,#right{
-    background: transparent;
-    border: none;
-    animation: all .5s ease-in-out;
-}
-#left:hover{
-    background-color: rgba(0,0,0,0.3);
-}
-#right:hover{
-    background-color: rgba(0,0,0,0.3);
-}
-
-.imgContainer{
-    width: 500px;
-    height: 350px;
+    width: 100%; /* Ajusta el ancho deseado */
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centra horizontalmente las imágenes */
 }
 
-.imgContainer>img{
-    height: 100%;
+.carousel img {
+    max-width: 100%; /* Establece un ancho máximo para las imágenes */
+    height: auto;
+    display: none;
 }
 
-.punto{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: blueviolet;
-    border: 1px solid white;
-}
-#puntitosContainer{
+/* Estilo para las flechas de navegación */
+.slick-prev,
+.slick-next {
+    background-color: #32c595;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     position: absolute;
-    height: 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
 }
-.puntoActual{
-    background-color: greenyellow;
+
+.slick-prev {
+    left: 0;
+    transform: translateY(-50%); /* Centra verticalmente en el borde izquierdo */
 }
+
+.slick-next {
+    right: 0;
+    transform: translateY(-50%); /* Centra verticalmente en el borde derecho */
+}
+
 h1 {
     background-color: #32c595;
     text-align: center;

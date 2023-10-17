@@ -239,7 +239,7 @@ button:hover {
 #volverBtn:hover {
     background-color: #000000;
 }
-#contacto enviar{
+#contacto input{
     background-color: #32c595;
     color: white;
     font-size: 18px;

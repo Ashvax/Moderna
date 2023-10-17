@@ -3,7 +3,7 @@ let botonSig= document.getElementById('right')
 let contenedorPuntos= document.getElementById('puntitosContainer')
 let imagen = document.getElementById('imagenView')
 
-let coleccion = ["./sources/b1.jpg","./sources/b2.jpg","./sources/b3.jpg","./sources/b4.jpg"]
+let coleccion = ["./sources/b1.jpg","./sources/b2.jpg","./sources/b3.jpg","./sources/b4.jpg", "./sources/b5.jpg","./sources/b6.jpg","./sources/b7.jpg","./sources/b8.jpg","./sources/b9.jpg"]
 
 let puntero=0;
 

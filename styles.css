@@ -239,6 +239,19 @@ button:hover {
 #volverBtn:hover {
     background-color: #000000;
 }
+#contacto enviar{
+    background-color: #32c595;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; 
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
 #servicios{
     color: #ffffff;
 }

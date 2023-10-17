@@ -70,45 +70,55 @@ footer {
     border: none; /* Elimina cualquier borde existente */
 }
 
-.carousel {
+.carrusel{
     display: flex;
-    width: 100%; /* Ajusta el ancho deseado */
-    overflow: hidden;
-    justify-content: center; /* Centra horizontalmente las imágenes */
+    justify-content: center;
 }
 
-.carousel img {
-    max-width: 100%; /* Establece un ancho máximo para las imágenes */
-    height: auto;
-    display: none;
-}
-
-/* Estilo para las flechas de navegación */
-.slick-prev,
-.slick-next {
-    background-color: #32c595;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
+#left,#right{
+    background: transparent;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    animation: all .5s ease-in-out;
+}
+#left:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+#right:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.imgContainer{
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer>img{
+    height: 100%;
+}
+
+.punto{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    border: 1px solid white;
+}
+#puntitosContainer{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25%;
 }
-
-.slick-prev {
-    left: 0;
-    transform: translateY(-50%); /* Centra verticalmente en el borde izquierdo */
+.puntoActual{
+    background-color: greenyellow;
 }
-
-.slick-next {
-    right: 0;
-    transform: translateY(-50%); /* Centra verticalmente en el borde derecho */
-}
-
 h1 {
     background-color: #32c595;
     text-align: center;

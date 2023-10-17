@@ -1,32 +1,58 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    const imagenes = document.querySelectorAll(".carousel img");
+let botonAnt= document.getElementById('left')
+let botonSig= document.getElementById('right')
+let contenedorPuntos= document.getElementById('puntitosContainer')
+let imagen = document.getElementById('imagenView')
 
-    let currentIndex = 0;
+let coleccion = ["./Dental.png","./Implantes.png","./Limipeza.jpg"]
 
-    function actualizarCarrousel() {
-        imagenes.forEach((img, index) => {
-            if (index === currentIndex) {
-                img.style.display = "block";
-            } else {
-                img.style.display = "none";
-            }
-        });
+let puntero=0;
+
+window.addEventListener('load', ()=>{
+    imagen.src= coleccion[puntero]
+    cargarPuntitos()
+    actualizarPuntos()
+})
+
+function cargarPuntitos(){
+    coleccion.forEach(()=>{
+        let p = document.createElement('div')
+        p.classList.add('punto')
+        contenedorPuntos.appendChild(p)
+    })
+}
+
+
+botonSig.addEventListener('click',()=>{
+    puntero++
+
+    if(puntero>=coleccion.length){
+        puntero=0
+    }
+    imagen.src= coleccion[puntero]
+    actualizarPuntos()
+
+})
+
+botonAnt.addEventListener('click',()=>{
+    puntero--
+    if(puntero<0){
+        puntero=coleccion.length-1
     }
 
-    prevBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex - 1 + imagenes.length) % imagenes.length;
-        actualizarCarrousel();
-    });
+    imagen.src= coleccion[puntero]
+    actualizarPuntos()
+})
 
-    nextBtn.addEventListener("click", () => {
-        currentIndex = (currentIndex + 1) % imagenes.length;
-        actualizarCarrousel();
-    });
+function actualizarPuntos(){
+    let pts= document.querySelectorAll('.punto')
+    
+    pts.forEach(p=>{
+        p.classList.remove('puntoActual')
+    })
 
-    actualizarCarrousel();
-});
+    pts[puntero].classList.add('puntoActual')
+
+}
         form.addEventListener('submit', function (e) {
             e.preventDefault();
 

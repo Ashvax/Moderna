@@ -6,6 +6,7 @@
     <title>Servicios</title>
     <a href="servicios.html" target="_blank">Servicios</a>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrusel.css">
 </head>
 <header>
     <img src="../Moderna/sources/Dental.png" alt="Logo de Odontología Moderna" id="logo">
@@ -16,12 +17,15 @@
      <!-- Contenedor del carrusel -->
    <div class="container">
     <div class="carousel">
-        <img src="../Moderna/sources/Blanqueamiento.jpg" alt="Blanqueamiento">
-        <img src="../Moderna/sources/Limipeza Dental.jpg" alt="Limpieza">
-        <img src="../Moderna/sources/Implantes.jpg" alt="Implantes">
-        <img src="../Moderna/sources/Muelas.jpg" alt="Extraccion">
-        <button id="prevBtn">Anterior</button>
-        <button id="nextBtn">Siguiente</button>
+        <button id="left">Anterior</button>
+        <div class="imgContainer">
+            <img id="imagenView" src="" alt="">
+            <div id="puntitosContainer">
+                
+            </div>
+        </div>
+        <button id="right">Siguiente</button>       
+
     </div>
 </div>
 
@@ -58,6 +62,7 @@
     </section>
     <a id="volverBtn" href="../Moderna/index.html" target="_blank">Volver a la Página Principal</a>
     <script src="script.js"></script>
+    <script src="carrusel.js"></script>
     <footer>
         <p>&copy; 2023 Odontología Moderna</p>
 </body>

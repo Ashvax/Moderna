@@ -32,7 +32,7 @@ li{
 }
 #ofrecemos {
     li{
-        list-style-type: none;
+   list-style-type: none;
     }
     text-align: center;
     text-size: 300%;
@@ -47,9 +47,6 @@ li{
 }
 #vision{
     color: #ffffff;
-}
-#valores{
-    
 }
 .nav{
     background: linear-gradient(90deg, black, #008F7A,#00C9A7);
@@ -239,7 +236,7 @@ button:hover {
 #volverBtn:hover {
     background-color: #000000;
 }
-#contacto input{
+.enviar-button {
     background-color: #32c595;
     color: white;
     font-size: 18px;

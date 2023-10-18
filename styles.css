@@ -128,8 +128,12 @@ h1 {
     background-color: #32c595;
     text-align: center;
 }
-h3{
-    background-color: #000000;
+h3  {
+    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 form {
     display: grid;

@@ -17,15 +17,18 @@ function cargarPuntitos() {
     coleccion.forEach((item, index) => {
         let p = document.createElement('div')
         p.classList.add('punto')
-        p.setAttribute('data-index', index) // Almacenamos el índice en el atributo data
+        p.setAttribute('data-index', index)
         contenedorPuntos.appendChild(p)
 
-        // Agregar evento de clic a cada puntito
+       
         p.addEventListener('click', () => {
             puntero = parseInt(p.getAttribute('data-index'), 10)
             imagen.src = coleccion[puntero]
             actualizarPuntos()
         })
+
+        
+        p.style.cursor = 'pointer';
     })
 }
 

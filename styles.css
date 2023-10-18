@@ -215,22 +215,22 @@ button:hover {
     padding: 20px; 
 }
 
-#contacto h1{
-    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
+h1{
+    background: linear-gradient(90deg, black, #bc4ed8,#009);
     padding: 15px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#contacto h2{
-    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
+h2{
+    background: linear-gradient(90deg, black, #bc4ed8,#009);
     padding: 15px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-#contacto h3{
-    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
+h3{
+    background: linear-gradient(90deg, black, #bc4ed8,#009);
     padding: 15px 0px;
     display: flex;
     flex-direction: row;

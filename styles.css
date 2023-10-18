@@ -209,9 +209,9 @@ button:hover {
 }
 
 .input-small {
-    font-size: 14px; /* Tamaño de fuente más pequeño */
-    padding: 5px; /* Espaciado interior más pequeño */
-    width: 100%; /* Ancho completo del contenedor */
+    font-size: 14px; 
+    padding: 5px; 
+    width: 50%; 
 }
 
 #contacto address {

@@ -128,7 +128,9 @@ h1 {
     background-color: #32c595;
     text-align: center;
 }
-
+h3{
+    background-color: #000000;
+}
 form {
     display: grid;
     gap: 10px;

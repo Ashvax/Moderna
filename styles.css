@@ -216,21 +216,21 @@ button:hover {
 }
 
 h1{
-    background: linear-gradient(90deg, black, #bc4ed8,#009);
+    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
     padding: 15px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 h2{
-    background: linear-gradient(90deg, black, #bc4ed8,#009);
+    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
     padding: 15px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 h3{
-    background: linear-gradient(90deg, black, #bc4ed8,#009);
+    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
     padding: 15px 0px;
     display: flex;
     flex-direction: row;

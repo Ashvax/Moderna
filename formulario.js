@@ -34,35 +34,34 @@ function validateForm() {
         return false;
     }
 
-        
-            mensajes.push({
-                nombre: nombre,
-                email: email,
-                telefono: telefono,
-                mensaje: mensaje
-            });
+    mensajes.push({
+        nombre: nombre,
+        email: email,
+        telefono: telefono,
+        mensaje: mensaje
+    });
 
-            mostrarMensajes();
-            
-            document.getElementById("enviarButton").style.backgroundColor = "black";
-            return false;
-        }
+    mostrarMensajes();
 
-        function isValidEmail(email) {
-            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            return emailPattern.test(email);
-        }
+    document.getElementById("enviarButton").style.backgroundColor = "black";
+    return false;
+}
 
-        function mostrarMensajes() {
-            var resultHTML = '<div style="color:green">Datos enviados:<br>';
-            for (var i = 0; i < mensajes.length; i++) {
-                resultHTML += 'Nombre: ' + mensajes[i].nombre + '<br>';
-                resultHTML += 'Email: ' + mensajes[i].email + '<br>';
-                resultHTML += 'Teléfono: ' + mensajes[i].telefono + '<br>';
-                resultHTML += 'Mensaje: ' + mensajes[i].mensaje + '<br>';
-                resultHTML += '<hr>';
-            }
-            resultHTML += '</div>';
+function isValidEmail(email) {
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailPattern.test(email);
+}
 
-            document.getElementById('result').innerHTML = resultHTML;
-        }
+function mostrarMensajes() {
+    var resultHTML = '<div style="color:green">Datos enviados:<br>';
+    for (var i = 0; i < mensajes.length; i++) {
+        resultHTML += 'Nombre: ' + mensajes[i].nombre + '<br>';
+        resultHTML += 'Email: ' + mensajes[i].email + '<br>';
+        resultHTML += 'Teléfono: ' + mensajes[i].telefono + '<br>';
+        resultHTML += 'Mensaje: ' + mensajes[i].mensaje + '<br>';
+        resultHTML += '<hr>';
+    }
+    resultHTML += '</div>';
+
+    document.getElementById('result').innerHTML = resultHTML;
+}

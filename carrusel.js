@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     actualizarPuntos()
 
     
-    intervalo = setInterval(cambiarImagenAutomaticamente, 5000);
+    intervalo = setInterval(cambiarImagenAutomaticamente, 3000);
 })
 
 function cargarPuntitos() {

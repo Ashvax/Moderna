@@ -22,7 +22,7 @@ header {
     color: #ffffff;
 }
 p{
-    background-color: #000000;
+    ackground: linear-gradient(90deg, black, #bc4ed8,#009);
     font-size: 25px;
     font-weight: bolder;
 

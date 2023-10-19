@@ -96,7 +96,15 @@ footer {
     overflow: hidden;
     justify-content: center; 
 }
-
+#puntitosContainer{
+position: absolute;
+height: 30px;
+width: 100%;
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-top: 15%;
+}
 
 
 

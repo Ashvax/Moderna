@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
     background-image: url('../Moderna/sources/carillas-dentales-sonrisa-24h.jpg'); 
@@ -22,6 +22,7 @@ header {
     color: #ffffff;
 }
 p{
+    background: linear-gradient(90deg, black, #bc4ed8,#009);
     font-size: 25px;
     font-weight: bolder;
 
@@ -32,7 +33,7 @@ li{
 }
 #ofrecemos {
     li{
-        list-style-type: none;
+   list-style-type: none;
     }
     text-align: center;
     text-size: 300%;
@@ -47,9 +48,6 @@ li{
 }
 #vision{
     color: #ffffff;
-}
-#valores{
-    
 }
 .nav{
     background: linear-gradient(90deg, black, #008F7A,#00C9A7);
@@ -98,7 +96,15 @@ footer {
     overflow: hidden;
     justify-content: center; 
 }
-
+#puntitosContainer{
+position: absolute;
+height: 30px;
+width: 100%;
+display: flex;
+justify-content: center;
+gap: 15px;
+margin-top: 15%;
+}
 
 
 
@@ -131,7 +137,16 @@ h1 {
     background-color: #32c595;
     text-align: center;
 }
-
+h2{
+    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
+}
+h3  {
+    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 form {
     display: grid;
     gap: 10px;
@@ -211,6 +226,34 @@ button:hover {
     padding: 20px; 
 }
 
+h1{
+    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h2{
+    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
+    padding: 15px 0px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h3{
+    background: linear-gradient(90deg, black, #008F7A,#00C9A7);
+    padding: 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input-small {
+    font-size: 14px; 
+    padding: 5px; 
+    width: 50%; 
+}
 
 #contacto address {
     font-size: 16px;
@@ -239,6 +282,20 @@ button:hover {
 #volverBtn:hover {
     background-color: #000000;
 }
+.enviar-button {
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; 
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 0px;
+    cursor: pointer;
+    width: 100%;
+}
 #servicios{
     color: #ffffff;
 }
@@ -254,6 +311,19 @@ button:hover {
 #extraccion{
     color: #ffffff;
 }
+#empastes{
+    color: #ffffff;
+}
+#curetajes{
+    color: #ffffff;
+}
+#endononcia{
+    color: #ffffff;
+}
+#ortodoncia{
+    color: #ffffff;
+}
+
 #Volverpagebtn{
-    background-color: #32c595;
+    background-color: #000000;
 }

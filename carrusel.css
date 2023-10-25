@@ -42,7 +42,7 @@
 }
 #puntitosContainer{
     position: absolute;
-    height: 30px;
+    height: 90px;
     width: 100%;
     display: flex;
     justify-content: center;

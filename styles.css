@@ -36,7 +36,7 @@ li{
    list-style-type: none;
     }
     text-align: center;
-    text-size: 300%;
+    text-size: 300px;
     color: #ffffff;
 }
 #objetivos{
@@ -97,13 +97,13 @@ footer {
     justify-content: center; 
 }
 #puntitosContainer{
-position: absolute;
-height: 90px;
-width: 100%;
-display: flex;
-justify-content: center;
-gap: 15px;
-margin-top: 15%;
+    position: absolute;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25%;
 }
 
 
